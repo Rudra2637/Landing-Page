@@ -1,0 +1,236 @@
+.section {
+  width: 100%;
+  margin-top: 28px;
+  background: #ffffff;
+}
+
+.promoPanel {
+  width: min(1120px, calc(100% - 48px));
+  margin: 0 auto 34px;
+  display: grid;
+  grid-template-columns: 1.02fr 0.98fr;
+  background: #ffffff;
+}
+
+.appPromo,
+.partnerPromo {
+  min-height: 340px;
+}
+
+.appPromo {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-items: center;
+  gap: 24px;
+  padding: 26px 24px 18px 8px;
+  border-right: 3px solid #1d1d1d;
+}
+
+.phoneStack {
+  position: relative;
+  width: 212px;
+  height: 280px;
+}
+
+.phoneBack,
+.phoneFront {
+  position: absolute;
+  width: 132px;
+  height: auto;
+  object-fit: contain;
+}
+
+.phoneBack {
+  left: 8px;
+  top: 16px;
+}
+
+.phoneFront {
+  left: 86px;
+  top: 0;
+}
+
+.appCopy h2,
+.partnerPromo h2 {
+  margin: 0 0 22px;
+  color: #111111;
+  font-size: clamp(2.25rem, 3.2vw, 3.45rem);
+  line-height: 1.08;
+  font-weight: 900;
+}
+
+.appCopy h2 span,
+.partnerPromo h2 span {
+  color: #3a9a17;
+}
+
+.appCopy p,
+.partnerPromo p {
+  margin: 0;
+  color: #2f2f2f;
+  font-size: 0.98rem;
+  line-height: 1.12;
+  max-width: 430px;
+}
+
+.appCopy h3 {
+  margin: 26px 0 14px;
+  color: #111111;
+  font-size: 1.1rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.storeRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  justify-content: center;
+}
+
+.partnerPromo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 26px 22px 18px 32px;
+}
+
+.downloadButton {
+  align-self: flex-start;
+  margin-top: 34px;
+  border: none;
+  border-radius: 4px;
+  background: #5a8744;
+  color: #ffffff;
+  padding: 10px 22px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.cityStrip {
+  width: min(1120px, calc(100% - 48px));
+  margin: 18px auto 0;
+  padding: 24px 0 26px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+  color: #171717;
+  font-size: 1rem;
+}
+
+.cityLabel {
+  font-weight: 800;
+  font-size: 1.1rem;
+}
+
+.cityList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.cityItem {
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: underline;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 6px;
+}
+
+.footer {
+  margin-top: 16px;
+  background: #050505;
+  color: #ffffff;
+  padding: 10px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.footerLogoWrap {
+  padding-top: 2px;
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 26px;
+  color: #f2f2f2;
+  font-size: 0.68rem;
+}
+
+.copyright {
+  margin: 0;
+  color: #cfcfcf;
+  font-size: 0.58rem;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .promoPanel {
+    grid-template-columns: 1fr;
+  }
+
+  .appPromo {
+    border-right: none;
+    border-bottom: 2px solid #1d1d1d;
+  }
+}
+
+@media (max-width: 640px) {
+  .promoPanel,
+  .cityStrip {
+    width: min(100%, calc(100% - 24px));
+  }
+
+  .appPromo {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    padding: 20px 14px;
+  }
+
+  .appCopy h3 {
+    margin-top: 12px;
+  }
+
+  .storeRow {
+    justify-content: center;
+  }
+
+  .partnerPromo {
+    padding: 18px 14px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .downloadButton {
+    align-self: center;
+  }
+
+  .cityStrip {
+    margin-top: 26px;
+    font-size: 0.92rem;
+    padding: 18px 0 20px;
+  }
+
+  .cityList {
+    gap: 12px;
+  }
+
+  .footer {
+    margin-top: 20px;
+    padding: 12px 18px 14px;
+  }
+
+  .footerLinks {
+    gap: 12px;
+    font-size: 0.7rem;
+  }
+}

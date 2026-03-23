@@ -1,0 +1,135 @@
+.section {
+  width: min(1180px, calc(100% - 48px));
+  margin: 112px auto 56px;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  background: #ffffff;
+  border-radius: 28px;
+  overflow: hidden;
+  border: 1px solid rgba(46, 125, 15, 0.14);
+  box-shadow: 0 18px 45px rgba(10, 27, 5, 0.08);
+}
+
+.card {
+  padding: 34px 28px 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  min-height: 100%;
+}
+
+.card:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.iconWrap {
+  width: 108px;
+  height: 108px;
+  border-radius: 28px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, #f6fbf3 0%, #eef7e8 100%);
+}
+
+.icon {
+  width: auto;
+  height: auto;
+  max-width: 76px;
+  max-height: 76px;
+}
+
+.card h2 {
+  color: #2e7d0f;
+  font-size: 1.75rem;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.card p {
+  color: #2a2a2a;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  max-width: 34ch;
+}
+
+.statement {
+  /* border: 3px solid #1f93ff; */
+  padding: 26px 32px;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(31, 147, 255, 0.08);
+}
+
+.statement h3 {
+  color: #4b4b4b;
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+
+.statement p {
+  color: #5a5a5a;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 64ch;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    width: min(100%, calc(100% - 32px));
+    margin-top: 128px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card:not(:last-child) {
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    width: min(100%, calc(100% - 24px));
+    margin-top: 144px;
+    gap: 24px;
+  }
+
+  .card {
+    padding: 26px 20px;
+  }
+
+  .card h2 {
+    font-size: 1.35rem;
+  }
+
+  .card p {
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .statement {
+    padding: 22px 18px;
+  }
+
+  .statement h3 {
+    font-size: 1.4rem;
+  }
+
+  .statement p {
+    font-size: 0.96rem;
+    line-height: 1.6;
+  }
+}

@@ -1,0 +1,123 @@
+.section {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto 84px;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.ribbon {
+  background: #237507;
+  border-radius: 6px;
+  padding: 12px 18px;
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(35, 117, 7, 0.18);
+}
+
+.ribbon span {
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.copyCard {
+  margin-top: 12px;
+  background: #f1f1f1;
+  border-radius: 10px;
+  padding: 22px 24px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+}
+
+.copyCard ul {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.copyCard li {
+  color: #666666;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.card {
+  text-align: left;
+}
+
+.imageWrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.cardImage {
+  width: auto;
+  height: auto;
+}
+
+.card h2 {
+  color: #4b4b4b;
+  font-size: clamp(1.5rem, 2vw, 2.1rem);
+  line-height: 1.15;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #666666;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    width: min(100%, calc(100% - 32px));
+  }
+
+  .cardGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .card {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    width: min(100%, calc(100% - 24px));
+    margin-bottom: 56px;
+    gap: 30px;
+  }
+
+  .ribbon {
+    padding: 10px 12px;
+  }
+
+  .ribbon span {
+    font-size: 0.94rem;
+    line-height: 1.45;
+  }
+
+  .copyCard {
+    padding: 18px 16px;
+  }
+
+  .copyCard li,
+  .card p {
+    font-size: 0.93rem;
+    line-height: 1.6;
+  }
+}

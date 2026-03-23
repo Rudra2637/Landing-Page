@@ -1,0 +1,174 @@
+.section {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.ribbon {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 18px;
+  padding: 12px 18px;
+  background: #237507;
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: 0 10px 24px rgba(35, 117, 7, 0.18);
+}
+
+.ribbon span {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1.2rem;
+  line-height: 1.25;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 2px 10px;
+}
+
+.copyCard {
+  background: #f1f1f1;
+  border-radius: 10px;
+  padding: 26px 28px;
+  color: #666666;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+}
+
+.copyCard > p {
+  font-size: 1.08rem;
+  line-height: 1.65;
+  margin-bottom: 20px;
+}
+
+.pointList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pointList p {
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.pointList strong {
+  color: #4a4a4a;
+}
+
+.choiceSection h2 {
+  color: #2e7d0f;
+  font-size: clamp(2rem, 3.5vw, 3.15rem);
+  line-height: 1.1;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 32px;
+}
+
+.choiceGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 420px) minmax(0, 1fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.infoCard {
+  background: #f7f5f5;
+  border: 1px solid rgba(88, 88, 88, 0.35);
+  border-radius: 14px;
+  padding: 18px 18px 18px 22px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.05);
+}
+
+.infoCard ul {
+  margin: 0;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.infoCard li {
+  color: #333333;
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.illustrationCard {
+  border-radius: 18px;
+  background: linear-gradient(180deg, #eaf1ff 0%, #dfeaf8 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  overflow: hidden;
+}
+
+.illustration {
+  width: 100%;
+  height: auto;
+}
+
+.tagline {
+  margin: 28px auto 0;
+  /* max-width: 30ch; */
+  color: #6d6d6d;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  line-height: 1.55;
+}
+
+.tagline span {
+  color: #2e7d0f;
+  font-weight: 800;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    width: min(100%, calc(100% - 32px));
+    gap: 42px;
+  }
+
+  .choiceGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .illustrationCard {
+    order: -1;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    width: min(100%, calc(100% - 24px));
+    margin-bottom: 56px;
+    gap: 34px;
+  }
+
+  .ribbon {
+    padding: 10px 12px;
+  }
+
+  .ribbon span {
+    font-size: 0.92rem;
+    padding: 2px 8px;
+  }
+
+  .copyCard {
+    padding: 20px 16px;
+  }
+
+  .copyCard > p,
+  .pointList p,
+  .infoCard li {
+    font-size: 0.93rem;
+    line-height: 1.55;
+  }
+
+  .infoCard {
+    padding: 16px 14px 16px 18px;
+  }
+}

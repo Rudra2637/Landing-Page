@@ -1,0 +1,79 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 12px 40px;
+}
+
+.logo {
+    object-fit: contain;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.badge {
+    background: green;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.phone {
+    color: green;
+    font-weight: bold;
+}
+
+.right {
+    display: flex;
+    gap: 30px;
+}
+
+.iconBox {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+
+.iconCircleUser {
+    width: 30px;
+    height: 30px;
+    background:green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    
+}
+
+.iconCircleDow {
+    width: 30px;
+    height: 30px;
+    background:#E8E8E8; 
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    
+}
+
+.text{
+    font-size:14px;
+    color:black;
+}
+
+.iconBox p {
+    font-size: 14px;
+}

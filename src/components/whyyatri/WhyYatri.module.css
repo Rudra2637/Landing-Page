@@ -1,0 +1,197 @@
+.section {
+  width: min(1180px, calc(100% - 48px));
+  margin: 0 auto 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+}
+
+.topPanel,
+.bottomPanel {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.carVisual,
+.bottomVisual {
+  display: flex;
+  justify-content: center;
+}
+
+.carImage,
+.locationImage {
+  width: 100%;
+  height: auto;
+}
+
+.content h2,
+.bottomText h2 {
+  font-size: clamp(2rem, 3.4vw, 3.2rem);
+  line-height: 1.1;
+  font-weight: 900;
+  color: #4b4b4b;
+  margin-bottom: 26px;
+}
+
+.content h2 span,
+.bottomText h2 span {
+  color: #2e7d0f;
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.feature {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.featureIcon {
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(31, 52, 18, 0.08);
+}
+
+.featureText h3 {
+  color: #2e7d0f;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 6px;
+}
+
+.featureText p,
+.bottomText p {
+  color: #666666;
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
+.tableCard {
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 18px 45px rgba(10, 27, 5, 0.08);
+}
+
+.tableHeader,
+.tableRow {
+  display: grid;
+  grid-template-columns: 1.1fr 1.45fr 1fr 2fr 0.7fr;
+}
+
+.tableHeader div {
+  background: #4f7f37;
+  color: #ffffff;
+  padding: 16px 12px;
+  font-size: 0.95rem;
+  font-weight: 800;
+  text-align: center;
+  border-right: 3px solid #ffffff;
+}
+
+.tableHeader div:last-child {
+  border-right: none;
+}
+
+.tableRow div {
+  background: linear-gradient(90deg, #edf7e7 0%, #d7efc7 100%);
+  color: #5b5b5b;
+  padding: 15px 12px;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  border-top: 3px solid #ffffff;
+  border-right: 3px solid #ffffff;
+}
+
+.tableRow div:last-child {
+  border-right: none;
+}
+
+.bottomPanel {
+  margin-top: 6px;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    width: min(100%, calc(100% - 32px));
+  }
+
+  .topPanel,
+  .bottomPanel {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .content h2,
+  .bottomText h2 {
+    margin-bottom: 20px;
+  }
+
+  .tableHeader,
+  .tableRow {
+    grid-template-columns: 1fr;
+  }
+
+  .tableHeader {
+    display: none;
+  }
+
+  .tableRow {
+    border-bottom: 10px solid #ffffff;
+  }
+
+  .tableRow div {
+    border-right: none;
+    border-top: 1px solid rgba(79, 127, 55, 0.14);
+    padding: 12px 14px;
+  }
+
+  .tableRow div::before {
+    content: attr(data-label);
+    display: block;
+    color: #2e7d0f;
+    font-size: 0.8rem;
+    font-weight: 800;
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    width: min(100%, calc(100% - 24px));
+    gap: 28px;
+    margin-bottom: 52px;
+  }
+
+  .feature {
+    gap: 12px;
+  }
+
+  .featureIcon {
+    width: 46px;
+    height: 46px;
+    border-radius: 14px;
+  }
+
+  .featureText h3 {
+    font-size: 0.92rem;
+  }
+
+  .featureText p,
+  .bottomText p,
+  .tableRow div {
+    font-size: 0.92rem;
+    line-height: 1.6;
+  }
+}

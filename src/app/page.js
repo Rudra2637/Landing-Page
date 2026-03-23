@@ -1,24 +1,24 @@
 "use client";
-
-import { useDispatch, useSelector } from "react-redux";
-import { setPickup } from "@/redux/bookingSlice";
+import Navbar from "@/components/navbar/Navbar";
+import Hero from "@/components/hero/Hero";
+import Highlights from "@/components/highlights/Highlights";
+import WhyYatri from "@/components/whyyatri/WhyYatri";
+import WhyOneWay from "@/components/whyoneway/WhyOneWay";
+import RoadTrip from "@/components/roadtrip/RoadTrip";
+import WhyChooseRental from "@/components/whychooseRental/Index";
+import FinalCta from "@/components/finalcta/FinalCta";
 
 export default function Home() {
-  const dispatch = useDispatch();
-  const pickup = useSelector((state) => state.booking.pickup);
-
   return (
-    <div style={{ padding: "20px" }}>
-      <h1>Redux Test</h1>
-
-      <input
-        type="text"
-        placeholder="Enter pickup"
-        value={pickup}
-        onChange={(e) => dispatch(setPickup(e.target.value))}
-      />
-
-      <p>Pickup: {pickup}</p>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <Highlights />
+      <WhyYatri />
+      <WhyOneWay />
+      <RoadTrip />
+      <WhyChooseRental />
+      <FinalCta />
+    </>
   );
 }
