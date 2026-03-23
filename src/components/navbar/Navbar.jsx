@@ -43,7 +43,7 @@ export default function Navbar() {
                         <Image
                             src="/profilecircle.png"
                             alt="24/7 Info"
-                            width={100}
+                            width={22}
                             height={20}
                             className={styles.logo}
                         />

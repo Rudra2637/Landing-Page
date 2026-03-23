@@ -9,7 +9,12 @@ export default function Hero() {
       {/* LEFT TEXT */}
       <div className={styles.left}>
         <h1>
-          INDIA'S <span>LEADING  ONE WAY INTERCITY</span><br />
+          <span className={styles.topLine}>
+            INDIA&apos;S <span className={styles.highlight}>LEADING</span>
+          </span>
+          <span className={`${styles.breakLine} ${styles.highlight}`}>
+            ONE WAY INTERCITY
+          </span>
         
         </h1>
         <p>CAB SERVICE PROVIDER</p>
