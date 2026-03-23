@@ -30,8 +30,8 @@ export default function Navbar() {
                         <Image
                             src="/download.png"
                             alt="24/7 Info"
-                            width={100}
-                            height={20}
+                            width={15}
+                            height={10}
                             className={styles.logo}
                         />
                     </div>
