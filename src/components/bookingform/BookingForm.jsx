@@ -343,12 +343,12 @@ export default function BookingForm() {
 
             {field.className === styles.toField && (
               <div className={styles.tripActions}>
-                <span className={styles.actionIcon}>
+                {/* <span className={styles.actionIcon}>
                   <MinusCircleIcon />
                 </span>
                 <span className={styles.actionIcon}>
                   <PlusCircleIcon />
-                </span>
+                </span> */}
               </div>
             )}
           </div>

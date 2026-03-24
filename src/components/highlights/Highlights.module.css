@@ -1,5 +1,6 @@
 .section {
-  width: min(1180px, calc(100% - 48px));
+  /* width: min(1180px, calc(100% - 48px)); */
+  width:100%;
   margin: 112px auto 56px;
   display: flex;
   flex-direction: column;
@@ -66,6 +67,7 @@
   text-align: center;
   background: #ffffff;
   box-shadow: 0 12px 30px rgba(31, 147, 255, 0.08);
+  width:100%
 }
 
 .statement h3 {
@@ -80,8 +82,9 @@
   color: #5a5a5a;
   font-size: 1.1rem;
   line-height: 1.7;
-  max-width: 64ch;
+  /* max-width: 64ch; */
   margin: 0 auto;
+  
 }
 
 @media (max-width: 1024px) {
